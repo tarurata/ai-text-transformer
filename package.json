@@ -13,8 +13,22 @@
     "commands": [
         {
             "name": "apply-to-clipboard",
-            "title": "Apply Prompt to Clipboard",
-            "description": "Apply AI prompt to clipboard content",
+            "title": "Clipboard Transformer",
+            "subtitle": "AI Text Transformer",
+            "description": "Transform clipboard text with AI prompts - polish, summarize, translate, and more",
+            "icon": "icon.png",
+            "keywords": [
+                "clipboard",
+                "transform",
+                "ai",
+                "text",
+                "prompt",
+                "polish",
+                "summarize",
+                "translate",
+                "grammar",
+                "rewrite"
+            ],
             "mode": "view"
         }
     ],

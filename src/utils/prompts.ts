@@ -60,6 +60,11 @@ export const DEFAULT_PROMPTS: Prompt[] = [
         name: "Add Emojis",
         instruction: "Add emojis to the following text to make it more fun and engaging:",
     },
+    {
+        id: "emoji",
+        name: "Emoji",
+        instruction: "Replace the following text with single emoji that best represents the text:",
+    },
 ];
 export const CUSTOM_PROMPT_ID = "custom";
 
