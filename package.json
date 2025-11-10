@@ -1,0 +1,67 @@
+{
+    "$schema": "https://www.raycast.com/schemas/extension.json",
+    "name": "ai-text-transformer",
+    "title": "AI Text Transformer",
+    "description": "Apply AI prompts to clipboard content",
+    "icon": "icon.png",
+    "author": "wata",
+    "categories": [
+        "Productivity",
+        "Developer Tools"
+    ],
+    "license": "MIT",
+    "commands": [
+        {
+            "name": "apply-to-clipboard",
+            "title": "Apply Prompt to Clipboard",
+            "description": "Apply AI prompt to clipboard content",
+            "mode": "view"
+        }
+    ],
+    "preferences": [
+        {
+            "name": "openaiApiKey",
+            "type": "password",
+            "required": false,
+            "title": "OpenAI API Key",
+            "description": "Your OpenAI API key (optional if using Raycast AI)",
+            "placeholder": "sk-..."
+        },
+        {
+            "name": "useRaycastAI",
+            "type": "checkbox",
+            "required": false,
+            "label": "Use Raycast AI",
+            "description": "Use Raycast AI instead of OpenAI (requires Raycast Pro)",
+            "default": false
+        },
+        {
+            "name": "openaiModel",
+            "type": "textfield",
+            "required": false,
+            "title": "OpenAI Model",
+            "description": "OpenAI model to use (e.g., gpt-4, gpt-3.5-turbo)",
+            "default": "gpt-3.5-turbo"
+        }
+    ],
+    "dependencies": {
+        "@raycast/api": "^1.69.0",
+        "@raycast/utils": "^1.10.0",
+        "openai": "^4.20.0"
+    },
+    "devDependencies": {
+        "@raycast/eslint-config": "^1.0.11",
+        "@types/node": "^20.10.0",
+        "@types/react": "^18.2.45",
+        "eslint": "^8.56.0",
+        "prettier": "^3.1.1",
+        "typescript": "^5.3.3"
+    },
+    "scripts": {
+        "build": "ray build -e dist",
+        "dev": "ray develop",
+        "fix-lint": "ray lint --fix",
+        "lint": "ray lint",
+        "publish": "ray publish"
+    }
+}
