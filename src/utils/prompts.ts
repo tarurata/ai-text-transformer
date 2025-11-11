@@ -8,7 +8,7 @@ export const DEFAULT_PROMPTS: Prompt[] = [
     {
         id: "natural-english",
         name: "Natural English",
-        instruction: "Make the following text more natural and human-like. Fix grammar, spelling, and style issues:",
+        instruction: "Make the following text more natural and human-like. Fix grammar, spelling, and style issues in English:",
     },
     {
         id: "summarize-150",
@@ -21,9 +21,14 @@ export const DEFAULT_PROMPTS: Prompt[] = [
         instruction: "Convert the following text into clear, concise bullet points:",
     },
     {
-        id: "expand",
-        name: "Expand",
-        instruction: "Expand and elaborate on the following text, adding more detail and context:",
+        id: "extract-phrases",
+        name: "Extract Phrases",
+        instruction: "Extract and list useful and natural sentences from following text:",
+    },
+    {
+        id: "dirty-joke",
+        name: "Dirty Joke",
+        instruction: "Replace the following text with a related dirty joke:",
     },
     {
         id: "simplify",
@@ -46,9 +51,9 @@ export const DEFAULT_PROMPTS: Prompt[] = [
         instruction: "Translate the following text to English:",
     },
     {
-        id: "fix-grammar",
-        name: "Fix Grammar",
-        instruction: "Fix all grammar and spelling errors in the following text:",
+        id: "make-task-list",
+        name: "Make Task List",
+        instruction: "Create a task list in markdown from the following text:",
     },
     {
         id: "extract-key-points",

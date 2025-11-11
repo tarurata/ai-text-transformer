@@ -41,7 +41,7 @@ async function transformWithOpenAI(
         apiKey: apiKey,
     });
 
-    const model = preferences.openaiModel || "gpt-3.5-turbo";
+    const model = preferences.openaiModel || "gpt-4.1-mini";
     const prompt = `${instruction}\n\n${text}`;
 
     try {
